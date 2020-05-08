@@ -1,3 +1,6 @@
+.App-header p {
+  visibility: visible;
+}
 .App {
   text-align: center;
 }
@@ -5,11 +8,15 @@
 .App-logo {
   height: 50vmin;
   pointer-events: none;
+  visibility: hidden;
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  .App-header p {
+    animation: App-p-change-position 1s 1 2s forwards;
+  }
   .App-logo {
-    animation: App-logo-spin 3s linear 1, App-logo-spin1 infinite 2s linear;
+    animation: App-logo-spin 3s forwards 1;
   }
 }
 
@@ -26,25 +33,29 @@
 
 @keyframes App-logo-spin {
   0% {
+    visibility: visible;
     opacity: 0%;
     height: 30vmin;
     transform: rotate(0deg);
   }
-  90% {
-    transform: rotate(360deg);
+  50% {
     opacity: 100%;
     sheight: 50vmin;
   }
   100% {
-    visibility: hidden;
-    opacity: 0%;
+    transform: rotate(360deg);
+    opacity: 0;
+    display: none;
   }
 }
-@keyframes App-logo-spin1 {
-  from {
-    transform: rotate(0deg);
+
+@keyframes App-p-change-position {
+  0% {
+    visibility: visible;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateX(200px);
+    display: none;
+    opacity: 0;
   }
 }
