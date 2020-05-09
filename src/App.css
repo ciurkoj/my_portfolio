@@ -38,12 +38,13 @@
     height: 30vmin;
     transform: rotate(0deg);
   }
-  100% {
+  50% {
     opacity: 100%;
     sheight: 50vmin;
+  }
+  100% {
+    opacity: 0%;
     transform: rotate(360deg);
-    opacity: 0;
-    display: none;
   }
 }
 
