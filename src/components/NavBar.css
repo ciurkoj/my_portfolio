@@ -81,7 +81,7 @@ a:hover {
   color: #415161;
 }
 .stuck {
-  position: fixed !important;
+  position: static;
   top: 0;
   left: 0;
   z-index: 13;
