@@ -13,7 +13,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-header p {
-    -o-animation: App-p-change-position 1s 1 2s forwards;
+    animation: App-p-change-position 1s 1 2s forwards;
   }
   .App-logo {
     animation: App-logo-spin 3s forwards 1;
@@ -39,8 +39,8 @@
     transform: rotate(0deg);
   }
   50% {
-    opacity: 100%;
-    sheight: 50vmin;
+    opacity: 1;
+    height: 50vmin;
   }
   100% {
     opacity: 0%;
