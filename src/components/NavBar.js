@@ -17,7 +17,10 @@ class NavBar extends Component {
                 "url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover",
             }}
             title={
-              <Link style={{ textDecoration: "none", color: "white" }} to="/">
+              <Link
+                style={{ textDecoration: "none", color: "white" }}
+                to="/my_portfolio"
+              >
                 Jakub Ciurko
               </Link>
             }
