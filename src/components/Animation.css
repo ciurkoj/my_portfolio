@@ -1,46 +1,48 @@
-.App-header p {
+.Animation-header p {
+  font-size: 1em;
   visibility: visible;
 }
-.App {
+.Animation {
   text-align: center;
 }
 
-.App-logo {
-  height: 50vmin;
+.Animation-logo {
+  height: 40vmin;
   pointer-events: none;
   visibility: hidden;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-header p {
-    animation: App-p-change-position 1s 1 2s forwards;
+  .Animation-header p {
+    animation: Animation-p-change-position 1s 1 2s forwards;
   }
-  .App-logo {
-    animation: App-logo-spin 3s forwards 1;
+  .Animation-logo {
+    animation: Animation-logo-spin 3s forwards 1;
   }
 }
 
-.App-header {
+.Animation-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-@keyframes App-logo-spin {
+@keyframes Animation-logo-spin {
   0% {
     visibility: visible;
     opacity: 0%;
-    height: 30vmin;
+    height: 20vmin;
     transform: rotate(0deg);
   }
   50% {
     opacity: 1;
-    height: 50vmin;
+    height: 40vmin;
   }
   100% {
     opacity: 0%;
@@ -48,7 +50,7 @@
   }
 }
 
-@keyframes App-p-change-position {
+@keyframes Animation-p-change-position {
   0% {
     visibility: visible;
   }
