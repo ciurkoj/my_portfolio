@@ -1,4 +1,5 @@
 .App-header p {
+  font-size: 1em;
   visibility: visible;
 }
 .App {
@@ -6,7 +7,7 @@
 }
 
 .App-logo {
-  height: 50vmin;
+  height: 40vmin;
   pointer-events: none;
   visibility: hidden;
 }
@@ -26,6 +27,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -35,12 +37,12 @@
   0% {
     visibility: visible;
     opacity: 0%;
-    height: 30vmin;
+    height: 20vmin;
     transform: rotate(0deg);
   }
   50% {
     opacity: 1;
-    height: 50vmin;
+    height: 40vmin;
   }
   100% {
     opacity: 0%;
