@@ -5,7 +5,7 @@ import LandingPage from "./landingPage";
 
 const Router = () => (
   <Switch>
-    <Route exact path="/" component={LandingPage} />
+    <Route exact path="/my_portfolio" component={LandingPage} />
   </Switch>
 );
 
