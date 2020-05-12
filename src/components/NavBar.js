@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
 import { Link } from "react-router-dom";
+import Router from "./router";
 
 class NavBar extends Component {
   render() {
@@ -17,34 +18,35 @@ class NavBar extends Component {
             }}
             title={
               <Link style={{ textDecoration: "none", color: "white" }} to="/">
-                MyPortfolio
+                Jakub Ciurko
               </Link>
             }
             scroll
           >
             <Navigation>
               <Link to="/resume">Resume</Link>
-              <Link to="/aboutme">About Me</Link>
               <Link to="/projects">Projects</Link>
+              <Link to="/aboutme">About Me</Link>
               <Link to="/contact">Contact</Link>
             </Navigation>
           </Header>
           <Drawer
             title={
               <Link style={{ textDecoration: "none", color: "black" }} to="/">
-                MyPortfoliooo
+                My Portfolio
               </Link>
             }
           >
             <Navigation>
               <Link to="/resume">Resume</Link>
-              <Link to="/aboutme">About Me</Link>
               <Link to="/projects">Projects</Link>
+              <Link to="/aboutme">About Me</Link>
               <Link to="/contact">Contact</Link>
             </Navigation>
           </Drawer>
           <Content>
             <div className="page-content" />
+            <Router />
           </Content>
         </Layout>
       </div>
