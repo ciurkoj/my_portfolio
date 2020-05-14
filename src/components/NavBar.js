@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
 import { Link } from "react-router-dom";
-import Router from "./router";
+//import Router from "./router";
+import "./NavBar.css";
+import LandingPage from "./landingPage";
 
 class NavBar extends Component {
   render() {
@@ -10,12 +12,6 @@ class NavBar extends Component {
         <Layout>
           <Header
             className="header-color"
-            style={{
-              height: "300px",
-              position: "absolute",
-              background:
-                "url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover",
-            }}
             title={
               <Link
                 style={{ textDecoration: "none", color: "white" }}
@@ -26,6 +22,7 @@ class NavBar extends Component {
             }
             scroll
           >
+            <div class="blurry"></div>
             <Navigation>
               <Link to="/resume">Resume</Link>
               <Link to="/projects">Projects</Link>
@@ -47,9 +44,9 @@ class NavBar extends Component {
               <Link to="/contact">Contact</Link>
             </Navigation>
           </Drawer>
-          <Content>
+          <Content style={{ zIndex: "3" }}>
             <div className="page-content" />
-            <Router />
+            <LandingPage />
           </Content>
         </Layout>
       </div>

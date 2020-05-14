@@ -1,41 +1,22 @@
 .header-color {
-  background: #833ab4; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #fcb045,
-    #fd1d1d,
-    #833ab4
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #fcb045,
-    #fd1d1d,
-    #833ab4
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #282c34;
+  color: #27221f;
+  display: block;
+  height: 300px;
+  position: absolute;
+  background: url(http://www.getmdl.io/assets/demos/transparent.jpg) center /
+    cover;
 }
+.blurry {
+  background: #282c34;
 
-.landing-grid {
-  background: #833ab4; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #fcb045,
-    #fd1d1d,
-    #833ab4
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #fcb045,
-    #fd1d1d,
-    #833ab4
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
+  height: 30px;
+  position: absolute;
+  left: 0px;
+  bottom: -25px;
+  box-shadow: #282c34 0px -35px 80px 100px;
 }
-
 .projects-grid {
   display: flex;
 }
