@@ -3,15 +3,17 @@ import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
 import { Link } from "react-router-dom";
 //import Router from "./router";
 import "./NavBar.css";
-import LandingPage from "./landingPage";
+//import LandingPage from "./landingPage";
+import Router from "./router";
 
 class NavBar extends Component {
   render() {
     return (
       <div className="demo-big-content">
-        <Layout>
+        <Layout fixedHeader>
           <Header
-            className="header-color"
+            transparent
+            className="header-color custom"
             title={
               <Link
                 style={{ textDecoration: "none", color: "white" }}
@@ -20,7 +22,6 @@ class NavBar extends Component {
                 Jakub Ciurko
               </Link>
             }
-            scroll
           >
             <div class="blurry"></div>
             <Navigation>
@@ -32,7 +33,10 @@ class NavBar extends Component {
           </Header>
           <Drawer
             title={
-              <Link style={{ textDecoration: "none", color: "black" }} to="/">
+              <Link
+                style={{ textDecoration: "none", color: "black" }}
+                to="/my_portfolio"
+              >
                 My Portfolio
               </Link>
             }
@@ -44,9 +48,10 @@ class NavBar extends Component {
               <Link to="/contact">Contact</Link>
             </Navigation>
           </Drawer>
-          <Content style={{ zIndex: "3" }}>
-            <div className="page-content" />
-            <LandingPage />
+          <Content>
+            <div className="page-content">
+              <Router />
+            </div>
           </Content>
         </Layout>
       </div>
