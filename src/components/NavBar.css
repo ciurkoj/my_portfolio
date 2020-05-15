@@ -28,3 +28,6 @@
   bottom: -25px;
   box-shadow: #282c34 0px -35px 80px 100px;
 }
+.mdl-layout__obfuscator.is-visible.is-visible {
+  opacity: 0;
+}
