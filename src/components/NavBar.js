@@ -36,9 +36,7 @@ class NavBar extends Component {
               <Link
                 style={{ textDecoration: "none", color: "black" }}
                 to="/my_portfolio"
-              >
-                My Portfolio
-              </Link>
+              ></Link>
             }
           >
             <Navigation>
