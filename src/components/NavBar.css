@@ -34,6 +34,7 @@
 .mdl-layout__drawer.is-visible {
   background-color: rgb(179, 212, 252, 0);
   top: 4em;
+  height: auto;
 }
 .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
   position: relative;
@@ -43,6 +44,7 @@
   font-weight: bolder;
   text-align: left;
   left: 3em;
+  width: 100px;
 }
 .mdl-layout__drawer {
   border-right: none !important;
