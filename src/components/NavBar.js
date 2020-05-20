@@ -33,6 +33,7 @@ class NavBar extends Component {
             </Navigation>
           </Header>
           <Drawer
+            style={{ backgroundColor: "red" }}
             title={
               <Link
                 style={{ textDecoration: "none", color: "black" }}
