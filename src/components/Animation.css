@@ -3,6 +3,8 @@
   visibility: visible;
 }
 .Animation {
+  position: relative;
+  top: -15em;
   text-align: center;
 }
 
@@ -23,7 +25,7 @@
 }
 
 .Animation-header {
-  background-color: #282c34;
+  background-color: transparent;
   min-height: 100vh;
   display: flex;
 

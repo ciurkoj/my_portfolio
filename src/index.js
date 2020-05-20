@@ -1,7 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+<<<<<<< HEAD
 import Animation from "./components/Animation";
+=======
+>>>>>>> master
 import NavBar from "./components/NavBar";
 import * as serviceWorker from "./serviceWorker";
 import "react-mdl/extra/material.css";
@@ -12,7 +15,10 @@ ReactDOM.render(
   <BrowserRouter>
     <div>
       <NavBar />
+<<<<<<< HEAD
       <Animation />
+=======
+>>>>>>> master
     </div>
   </BrowserRouter>,
   document.getElementById("root")

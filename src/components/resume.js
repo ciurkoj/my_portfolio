@@ -15,7 +15,7 @@ class Resume extends Component {
             />
           </div>
 
-          <h2 style={{ paddingTop: "2em" }}>Jakub Ciurko</h2>
+          <h2 style={{ paddingTop: "2em", color: "white" }}>Jakub Ciurko</h2>
           <h4 style={{ color: "grey" }}>Junior Frontend Developer </h4>
           <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
           <p>
