@@ -10,8 +10,9 @@ class NavBar extends Component {
   render() {
     return (
       <div className="demo-big-content">
-        <Layout fixedHeader>
+        <Layout>
           <Header
+            scroll
             transparent
             className="header-color custom"
             title={
