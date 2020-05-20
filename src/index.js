@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./components/Animation";
 import NavBar from "./components/NavBar";
 import * as serviceWorker from "./serviceWorker";
 import "react-mdl/extra/material.css";
@@ -12,7 +11,6 @@ ReactDOM.render(
   <BrowserRouter>
     <div>
       <NavBar />
-      <App />
     </div>
   </BrowserRouter>,
   document.getElementById("root")
