@@ -6,37 +6,63 @@ class Resume extends Component {
   render() {
     return (
       <Grid>
-        <Cell col={4}>
-          <div style={{ textAlign: "center" }}>
+        <Cell
+          col={9}
+          align={"middle"}
+          className="banner-text"
+          style={{ display: "flex" }}
+        >
+          <Cell col={3}>
             <img
               src="https://rusdorznak.ru/Uploads/Reviews/man_512x512.png"
               alt="avatar"
+              id="resume_avatar"
               style={{ height: "200px" }}
             />
-          </div>
+          </Cell>
+          <Cell col={9} textAlign={"left"} style={{}}>
+            <div col={12} style={{ display: "flex" }}>
+              <Cell col={9}>
+                <h2 style={{ color: "white" }}>Jakub Ciurko</h2>
+              </Cell>
+              <Cell style={{ color: "grey" }}>
+                Town:<p>Coventry, UK</p>
+              </Cell>
 
-          <h2 style={{ paddingTop: "2em", color: "white" }}>Jakub Ciurko</h2>
-          <h4 style={{ color: "grey" }}>Junior Frontend Developer </h4>
-          <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-          </p>
-          <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
-          <h5>Town</h5>
-          <p>Coventry</p>
-          <h5>Phone</h5>
-          <p>07554602380</p>
-          <h5>Email</h5>
-          <p>ciurkoj@outlook.com</p>
-          <h5>Web</h5>
-          <p>mywebsite.com</p>
-          <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
-        </Cell>{" "}
+              <Cell style={{ color: "grey" }}>
+                Tel:<p>07554602380</p>
+              </Cell>
+
+              <Cell style={{ color: "grey" }}>
+                Email:<p>ciurkoj@outlook.com</p>
+              </Cell>
+            </div>
+            <Cell>
+              <h4
+                style={{
+                  color: "grey",
+                  paddingBottom: "5em",
+                  borderBottom: "3px solid #833fb2",
+                }}
+              >
+                Junior Frontend Developer{" "}
+              </h4>
+            </Cell>
+            <Grid>
+              <Cell col={4}>
+                <p>2018 - present</p>
+              </Cell>
+              <Cell col={8}>
+                <h4 style={{ color: "grey" }}>Coventry University</h4>
+                <p>
+                  "Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s"
+                </p>
+              </Cell>
+            </Grid>
+          </Cell>
+        </Cell>
       </Grid>
     );
   }
