@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import "./resume.css";
+import Education from "./education.js";
+
+import selfie from "../avatars/selfie.png";
 
 class Resume extends Component {
   render() {
@@ -9,10 +12,10 @@ class Resume extends Component {
         <Grid col={9} className="banner-text" style={{ display: "flex" }}>
           <Cell col={3}>
             <img
-              src="https://rusdorznak.ru/Uploads/Reviews/man_512x512.png"
+              src={selfie}
               alt="avatar"
               id="resume_avatar"
-              style={{ height: "200px" }}
+              style={{ height: "300px", borderRadius: "80px" }}
             />
           </Cell>
           <Cell col={9} textAlign={"left"} style={{}}>
@@ -72,18 +75,17 @@ class Resume extends Component {
               </Grid>
             </Grid>
           </Cell>
-          <Grid>
-            <Cell col={4}>
-              <p>2018 - present</p>
-            </Cell>
-            <Cell col={8}>
-              <h4 style={{ color: "grey" }}>Coventry University</h4>
-              <p>
-                "Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s"
-              </p>
-            </Cell>
+          <Grid style={{ color: "white" }}>
+            <Education
+              startYear={2007}
+              endYear={2009}
+              schoolName="Coventry University"
+              schoolDegree="BSc (hons) Computer Science"
+              schoolDescription="Lorem Ipsum is simply dummy text of 
+              the printing and typesetting industry. 
+              "
+              modules="Object Oriented Programming"
+            />
           </Grid>
         </Grid>
       </Grid>
