@@ -38,7 +38,7 @@ class Resume extends Component {
                 style={{
                   display: "block",
                   fontSize: "20pt",
-                  width: "50%",
+                  width: "55%",
                   color: "grey",
 
                   borderBottom: "3px solid #833fb2",
@@ -46,18 +46,26 @@ class Resume extends Component {
               >
                 Skills
               </h3>
-              <Grid style={{ display: "flex", flow: "wrap" }}>
-                <Cell col={6}>
-                  &bull; Programming languages: Python, C++, JavaScript, HTML,
-                  CSS, SQL
+              <Grid
+                style={{
+                  display: "flex",
+                  flow: "wrap",
+                  flexDirection: "row",
+                  order: "1",
+                }}
+              >
+                <Cell col={5}>
+                  &bull; Programming languages: Python, C++, C, JavaScript,
+                  HTML, CSS, SQL, R, MatLab
                 </Cell>
-                <Cell col={6}>&bull; Version Control: GIT &amp; GitHub</Cell>
-                <Cell col={6}>&bull; Linux-Ubuntu</Cell>
-                <Cell col={6}>
+                <Cell col={5}>&bull; Linux-Ubuntu</Cell>
+                <Cell col={5}>&bull; Version Control: GIT &amp; GitHub</Cell>
+                <Cell col={5}>&bull; MS Word, Excel</Cell>
+                <Cell col={5}>
                   &bull; Project Management - Agile, Scrum, Kanban
                 </Cell>
-                <Cell col={6}>&bull; MS Word, Excel</Cell>
-                <Cell col={6}>
+                <Cell col={5}>&bull; PLC Siemens S7</Cell>
+                <Cell col={5}>
                   &bull; Languages: English(Proficient), Polish (Native), German
                   (Upper-intermediate)
                 </Cell>
