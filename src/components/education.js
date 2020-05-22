@@ -5,8 +5,17 @@ class Education extends Component {
   render() {
     return (
       <Grid>
-        <Cell col={4}>
-          <p>
+        <Cell
+          col={4}
+          style={{
+            display: "table",
+            height: "auto",
+            margin: "auto",
+            textAlign: "center",
+            verticalAlign: "middle",
+          }}
+        >
+          <p style={{ display: "table-cell", verticalAlign: "middle" }}>
             {this.props.startYear} - {this.props.endYear}
           </p>
         </Cell>
