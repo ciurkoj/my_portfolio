@@ -35,7 +35,7 @@ class Resume extends Component {
                 Email:<p>ciurkoj@outlook.com</p>
               </Cell>
             </div>
-            <Grid col={12} style={{ color: "white" }}>
+            <Grid col={12} style={{ paddingLeft: "5em", color: "white" }}>
               <h3
                 align={"left"}
                 style={{
@@ -75,24 +75,52 @@ class Resume extends Component {
               </Grid>
             </Grid>
           </Cell>
-          <Grid style={{ color: "white", display: "flex" }}>
+          <Grid style={{ color: "white", display: "table", marginLeft: "0px" }}>
             <Grid
               align={"left"}
-              style={{ width: "20em", borderRight: "3px solid #833fb2" }}
+              style={{
+                display: "table-cell",
+                margin: "auto",
+                verticalAlign: "middle",
+                width: "15em",
+                textAlign: "center",
+                fontSize: "20pt",
+                borderRight: "3px solid #833fb2",
+              }}
             >
               Education
             </Grid>
 
-            <Grid style={{ color: "white" }}>
+            <Grid
+              style={{
+                display: "table-cell",
+                color: "white",
+                whiteSpace: "pre-wrap",
+              }}
+            >
               <Education
-                startYear={2007}
-                endYear={2009}
+                startYear={"09/2018"}
+                endYear={"present"}
                 schoolName="Coventry University"
                 schoolDegree="BSc (hons) Computer Science"
-                schoolDescription="Lorem Ipsum is simply dummy text of 
-              the printing and typesetting industry. 
-              "
-                modules="Object Oriented Programming"
+                module0={"Software Engineering - Fronend Deveopment"}
+                module1={"Operating Systems and Security - C, C++, Assemby"}
+                module2={"Advanced Algorithms - Python, C++, R"}
+              />
+              <Education
+                startYear={"09/2014"}
+                endYear={"04/2018"}
+                schoolName="Technikum nr.2 Jarosław"
+                schoolDegree="Electronics Technician"
+                module0={
+                  "Automation Systems – PLC Siemens S7, Smart Home installations."
+                }
+                module1={
+                  "Electronic Devices' Serivice –Diagnostics, Design, Build, and Techniques of repair."
+                }
+                module2={
+                  "Network Devices Configuration- local network design and installation"
+                }
               />
             </Grid>
           </Grid>

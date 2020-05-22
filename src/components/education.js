@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
-
 class Education extends Component {
   render() {
     return (
@@ -12,7 +11,7 @@ class Education extends Component {
             height: "auto",
             margin: "auto",
             textAlign: "center",
-            verticalAlign: "middle",
+            paddingLeft: "30px",
           }}
         >
           <p style={{ display: "table-cell", verticalAlign: "middle" }}>
@@ -28,11 +27,20 @@ class Education extends Component {
           >
             {this.props.schoolDegree}
           </h5>
-          <p style={{ padding: "0px", paddingLeft: "1em", fontSize: "12pt" }}>
-            {this.props.schoolDescription}
-          </p>
-          <p style={{ padding: "0px", paddingLeft: "1em", fontSize: "12pt" }}>
-            {this.props.modules}
+          <p
+            style={{
+              padding: "0px",
+              paddingLeft: "1em",
+              fontSize: "12pt",
+            }}
+          >
+            <b>Modules:</b> <br />
+            &bull; {this.props.module0}
+            <br />
+            &bull; {this.props.module1}
+            <br />
+            &bull; {this.props.module2}
+            <br />
           </p>
         </Cell>
       </Grid>
