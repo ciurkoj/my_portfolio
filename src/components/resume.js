@@ -72,7 +72,13 @@ class Resume extends Component {
               </Grid>
             </Grid>
           </Cell>
-          <Grid>
+          <Grid style={{ color: "white", display: "flex" }}>
+            <Grid
+              align={"left"}
+              style={{ width: "20em", borderRight: "3px solid #833fb2" }}
+            >
+              Education
+            </Grid>
             <Cell col={4}>
               <p>2018 - present</p>
             </Cell>
