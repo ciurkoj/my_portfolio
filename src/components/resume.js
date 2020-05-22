@@ -4,6 +4,7 @@ import "./resume.css";
 import Education from "./education.js";
 
 import selfie from "../avatars/selfie.png";
+import WorkExperience from "./workExperience";
 
 class Resume extends Component {
   render() {
@@ -121,6 +122,62 @@ class Resume extends Component {
                 module2={
                   "Network Devices Configuration- local network design and installation"
                 }
+              />
+            </Grid>
+          </Grid>
+          <Grid style={{ color: "white", display: "table", marginLeft: "0px" }}>
+            <Grid
+              className="section"
+              align={"left"}
+              style={{
+                display: "table-cell",
+                margin: "auto",
+                verticalAlign: "middle",
+                width: "15em",
+                textAlign: "center",
+                fontSize: "20pt",
+                borderRight: "3px solid #833fb2",
+              }}
+            >
+              Work Experience
+            </Grid>
+            <Grid
+              style={{
+                display: "table-cell",
+                color: "white",
+                whiteSpace: "pre-wrap",
+              }}
+            >
+              <WorkExperience
+                startYear={"07/2019"}
+                endYear={"09/2019"}
+                jobName="Electrician"
+                employer="sky Personal GmbH"
+                location="Bremen Area, Germany"
+                jobDescription="My team was responsible for installing the new fire protection system and then a
+                Wireless LAN network. Our duties included connecting patch panels, installing wireless
+                routers, and also connecting cash tills. Besides that, as a team leader I had to check my
+                colleagues' work, report our work to the manager and speak about what needs to be
+                done next. This developed my leadership and delegation skills."
+              />
+              <WorkExperience
+                startYear={"04/2019"}
+                endYear={"05/2019"}
+                jobName="Stock Controller"
+                employer="Staffing Match Ltd"
+                location="Magna Park, Lutterworth"
+                jobDescription="Checking the conformity of goods in the warehouse with the main database requiredme to work to deadline, which required strong time-management skills. I was
+                responsible for working on the scissor lift."
+              />
+              <WorkExperience
+                startYear={"05/2018"}
+                endYear={"09/2018"}
+                jobName="Electrician"
+                employer="Abacent Personal Service GmbH"
+                location="Siegen Area, Germany"
+                jobDescription="Electric installation redevelopment in Aldi store chain. I was responsible for installing
+                new devices such as checkout machines, alarm systems and I also mounted new light
+                fixtures."
               />
             </Grid>
           </Grid>
