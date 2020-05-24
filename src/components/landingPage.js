@@ -16,13 +16,13 @@ class Landing extends Component {
             />
 
             <div className="banner-text">
-              <h1> Junior Web Developer</h1>
+              <h1> Junior Developer</h1>
 
               <hr />
 
               <p>
-                HTML/CSS | React-MDL | JavaScript | React | NodeJS | Koa |
-                Express |
+                HTML/CSS | JavaScript | React | NodeJS |React-MDL | Koa |
+                Express | C&amp;C++ | Python
               </p>
 
               <div className="social-links">
