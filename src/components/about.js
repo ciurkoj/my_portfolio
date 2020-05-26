@@ -27,8 +27,8 @@ class About extends Component {
               would like to show you. I'm still trying to figure out where I
               would fit the most and this is why there is so many different
               projects. Most of them I made as my university task, but there are
-              some I made on my own. Click <Link to="/projects">HERE</Link> find
-              out more.
+              some I made on my own. Click
+              <Link to="/my_portfolio/projects">HERE</Link> find out more.
             </p>
 
             <div className="contact-list"></div>
