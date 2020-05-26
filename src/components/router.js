@@ -10,10 +10,10 @@ import About from "./about";
 const Router = () => (
   <Switch>
     <Route exact path="/my_portfolio" component={LandingPage} />
-    <Route path="/resume" component={Resume} />
+    <Route path="/my_portfolio/resume" component={Resume} />
     <Route path="/my_portfolio/projects" component={Projects} />
-    <Route path="/contact" component={Contact} />
-    <Route path="/about" component={About} />
+    <Route path="/my_portfolio/contact" component={Contact} />
+    <Route path="/my_portfolio/about" component={About} />
   </Switch>
 );
 

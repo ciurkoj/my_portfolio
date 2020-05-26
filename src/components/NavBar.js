@@ -26,10 +26,10 @@ class NavBar extends Component {
           >
             <div class="blurry"></div>
             <Navigation>
-              <Link to="/resume">Resume</Link>
+              <Link to="/my_portfolio/resume">Resume</Link>
               <Link to="/my_portfolio/projects">Projects</Link>
-              <Link to="/about">About Me</Link>
-              <Link to="/contact">Contact</Link>
+              <Link to="/my_portfolio/about">About Me</Link>
+              <Link to="/my_portfolio/contact">Contact</Link>
             </Navigation>
           </Header>
           <Drawer
@@ -42,10 +42,10 @@ class NavBar extends Component {
             }
           >
             <Navigation>
-              <Link to="/resume">Resume</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/about">About Me</Link>
-              <Link to="/contact">Contact</Link>
+              <Link to="/my_portfolio/resume">Resume</Link>
+              <Link to="/my_portfolio/projects">Projects</Link>
+              <Link to="/my_portfolio/about">About Me</Link>
+              <Link to="/my_portfolio/contact">Contact</Link>
             </Navigation>
           </Drawer>
           <Content>
