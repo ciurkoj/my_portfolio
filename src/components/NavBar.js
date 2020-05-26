@@ -27,7 +27,7 @@ class NavBar extends Component {
             <div class="blurry"></div>
             <Navigation>
               <Link to="/resume">Resume</Link>
-              <Link to="/projects">Projects</Link>
+              <Link to="/my_portfolio/projects">Projects</Link>
               <Link to="/about">About Me</Link>
               <Link to="/contact">Contact</Link>
             </Navigation>
