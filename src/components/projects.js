@@ -27,15 +27,20 @@ class Projects extends Component {
           {" "}
           <ProjectCard
             projectName="MyPortfolio project"
-            projectDescription="Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's"
+            projectDescription="The main goal is to have a website where I can show all my work I've done. I'd like start a blog, so maybe some day it'll change its nature"
             url={arrowUp}
+            githubLink="https://github.com/jciurko/my_portfolio"
+            liveDemo="https://jciurko.github.io/my_portfolio/"
           />
           <ProjectCard
             projectName="ExchangeBay"
-            projectDescription="Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's"
+            projectDescription="The website was a project where I've contributed as a team member.
+             The website's main goal was to handle barter exchanges between users.
+              The final product allows users to upload images, tracks transactions, 
+              restores passwords through links sent to users on request. 
+              In conclusion it's a very small and basic ebay"
             url="https://www.pngmart.com/files/7/Exchange-PNG-Transparent-Picture.png"
+            githubLink="https://github.coventry.ac.uk/5001CEM-1920SEPJAN/grantb3"
           />
           <ProjectCard
             projectName="Tic Tac Toe"

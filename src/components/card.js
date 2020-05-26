@@ -10,6 +10,7 @@ import {
 } from "react-mdl";
 
 import "./card.css";
+import { Link } from "react-router-dom";
 class ProjectCard extends Component {
   render() {
     return (
@@ -45,10 +46,12 @@ class ProjectCard extends Component {
             colored
             style={{ fontSize: "16pt", fontWeight: "bold" }}
           >
-            GitHub
+            <a href={this.props.githubLink}>GitHub</a>
           </Button>
           <Button colored>CodePen</Button>
-          <Button colored>Live Demo</Button>
+          <Button colored>
+            <a href={this.props.liveDemo}>Live Demo</a>
+          </Button>
         </CardActions>
         <CardMenu style={{ color: "#fff" }}>
           <IconButton name="share" />
