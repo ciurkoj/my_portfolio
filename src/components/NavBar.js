@@ -28,7 +28,7 @@ class NavBar extends Component {
             <Navigation>
               <Link to="/resume">Resume</Link>
               <Link to="/projects">Projects</Link>
-              <Link to="/aboutme">About Me</Link>
+              <Link to="/about">About Me</Link>
               <Link to="/contact">Contact</Link>
             </Navigation>
           </Header>
@@ -44,7 +44,7 @@ class NavBar extends Component {
             <Navigation>
               <Link to="/resume">Resume</Link>
               <Link to="/projects">Projects</Link>
-              <Link to="/aboutme">About Me</Link>
+              <Link to="/about">About Me</Link>
               <Link to="/contact">Contact</Link>
             </Navigation>
           </Drawer>
