@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import {
   Card,
   CardTitle,
@@ -10,53 +10,56 @@ import {
 } from "react-mdl";
 
 import "./card.css";
-import { Link } from "react-router-dom";
+
 class ProjectCard extends Component {
   render() {
     return (
-      <Card
-        shadow={5}
-        style={{
-          backgroundColor: "#171b22 ",
-          borderRadius: "10px",
-          minWidth: "450px",
-          margin: "3em",
-          padding: "2em",
-        }}
-      >
-        <CardTitle
-          bold
+      <div>
+        <Card
+          id="card"
+          shadow={5}
           style={{
-            color: "white",
-            height: "15em",
-            background: `url(${this.props.url}) center / contain `,
-
+            backgroundColor: "#171b22 ",
             borderRadius: "10px",
-            justifyContent: "center",
+            minWidth: "450px",
+            margin: "3em",
+            padding: "2em",
           }}
         >
-          {this.props.projectName}
-        </CardTitle>
-        <CardText style={{ color: "white" }}>
-          {this.props.projectDescription}
-        </CardText>
-        <CardActions>
-          <Button
-            shadow={5}
-            colored
-            style={{ fontSize: "16pt", fontWeight: "bold" }}
+          <CardTitle
+            bold
+            style={{
+              color: "white",
+              height: "15em",
+              background: `url(${this.props.url}) center / contain `,
+
+              borderRadius: "10px",
+              justifyContent: "center",
+            }}
           >
-            <a href={this.props.githubLink}>GitHub</a>
-          </Button>
-          <Button colored>CodePen</Button>
-          <Button colored>
-            <a href={this.props.liveDemo}>Live Demo</a>
-          </Button>
-        </CardActions>
-        <CardMenu style={{ color: "#fff" }}>
-          <IconButton name="share" />
-        </CardMenu>
-      </Card>
+            {this.props.projectName}
+          </CardTitle>
+          <CardText style={{ color: "white" }}>
+            {this.props.projectDescription}
+          </CardText>
+          <CardActions>
+            <Button
+              shadow={5}
+              colored
+              style={{ fontSize: "16pt", fontWeight: "bold" }}
+            >
+              <a href={this.props.githubLink}>GitHub</a>
+            </Button>
+            <Button colored>CodePen</Button>
+            <Button colored>
+              <a href={this.props.liveDemo}>Live Demo</a>
+            </Button>
+          </CardActions>
+          <CardMenu style={{ color: "#fff" }}>
+            <IconButton name="share" />
+          </CardMenu>
+        </Card>
+      </div>
     );
   }
 }
