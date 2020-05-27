@@ -10,7 +10,7 @@
 }
 @media (prefers-reduced-motion: no-preference) {
   .landing-grid {
-    animation: landing-grid 1s forwards 3s;
+    animation: landing-grid 1s forwards 0.3s;
   }
 }
 
