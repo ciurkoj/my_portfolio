@@ -1,7 +1,3 @@
-.mdl-button {
-  position: inherit !important;
-}
-
 .mdl-card {
   z-index: auto !important;
 }
@@ -28,6 +24,7 @@ a:link {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 3;
 }
 
 .modal-backdrop {

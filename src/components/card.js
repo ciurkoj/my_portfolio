@@ -51,7 +51,7 @@ class ProjectCard extends Component {
           <Card
             shadow={5}
             style={{
-              position: "inherit",
+              position: "relative",
               backgroundColor: "#171b22 ",
               borderRadius: "10px",
               minWidth: "450px",
@@ -59,6 +59,9 @@ class ProjectCard extends Component {
               padding: "2em",
             }}
           >
+            <CardMenu style={{ color: "#fff" }}>
+              <IconButton name="share" />
+            </CardMenu>{" "}
             <CardTitle
               onClick={this.startCreateEventHandler}
               style={{
@@ -95,9 +98,6 @@ class ProjectCard extends Component {
                 CodePen
               </Button>
             </CardActions>
-            <CardMenu style={{ color: "#fff" }}>
-              <IconButton name="share" />
-            </CardMenu>{" "}
           </Card>
         </div>
       </React.Fragment>
