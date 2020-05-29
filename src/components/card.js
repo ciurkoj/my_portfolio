@@ -69,8 +69,7 @@ class ProjectCard extends Component {
                 color: "white",
                 height: "15em",
                 background: `url(${this.props.url}) center / contain `,
-                backgroundPositionY: "-10px",
-                backgroundSize: "55%",
+
                 borderRadius: "10px",
                 justifyContent: "center",
               }}
