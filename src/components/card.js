@@ -12,94 +12,94 @@ import {
 import "./card.css";
 import Modal from "./modal";
 
-function App() {
-  const modalRef = React.useRef();
-
-  const openModal = () => {
-    modalRef.current.openModal();
+class ProjectCard extends Component {
+  state = {
+    creating: false,
+  };
+  startCreateEventHandler = () => {
+    this.setState({ creating: true });
   };
 
-  return (
-    <div className="App">
-      <button onClick={openModal}>Open Modal</button>
-      <Modal ref={modalRef}>
-        <h1>Modal Header</h1>
-        <p>
-          <span>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-            eligendi esse facere illo in minima nulla quis reiciendis. Eligendi
-            impedit nostrum quam quod reprehenderit, ullam veritatis. Fuga
-            provident quos velit.
-          </span>
-          <span>
-            Accusantium ad, alias animi et eum, excepturi explicabo fuga iusto
-            magnam maxime minima molestias nam nemo nostrum pariatur
-            perspiciatis porro quae quibusdam quidem quis repudiandae sed ullam
-            vel, veniam vero.
-          </span>
-          <span>
-            Eligendi nulla quasi quibusdam quod saepe suscipit tenetur voluptas
-            voluptate! Accusamus amet, commodi culpa distinctio dolor eveniet
-            expedita hic iure magnam magni mollitia nulla officia quas,
-            reiciendis repellat sapiente, veniam!
-          </span>
-        </p>
-        <button onClick={() => modalRef.current.close()}>Close Modal</button>
-      </Modal>
-    </div>
-  );
-}
+  modalConfirmHandler = () => {
+    this.setState({ creating: false });
+  };
 
-class ProjectCard extends Component {
+  modalCancelHandler = () => {
+    this.setState({ creating: false });
+  };
   render() {
     return (
-      <div id="card">
-        <Card
-          shadow={5}
-          style={{
-            position: "inherit",
-            backgroundColor: "#171b22 ",
-            borderRadius: "10px",
-            minWidth: "450px",
-            margin: "3em",
-            padding: "2em",
-          }}
-        >
-          <CardTitle
-            bold
+      <React.Fragment>
+        {this.state.creating && (
+          <Modal
+            canCancel
+            canConfirm
+            onCancel={this.modalCancelHandler}
+            onConfirm={this.modalConfirmHandler}
+          >
+            <h1>{this.props.projectName}</h1>
+            <p>
+              <h5>{this.props.projectSubtitle} </h5>
+              <span>{this.props.projectDescription}</span>
+            </p>
+            <Button colored onClick={this.modalCancelHandler}>
+              Close Modal
+            </Button>
+          </Modal>
+        )}
+        <div id="card">
+          <Card
+            shadow={5}
             style={{
-              color: "white",
-              height: "15em",
-              background: `url(${this.props.url}) center / contain `,
-
+              position: "inherit",
+              backgroundColor: "#171b22 ",
               borderRadius: "10px",
-              justifyContent: "center",
+              minWidth: "450px",
+              margin: "3em",
+              padding: "2em",
             }}
           >
-            {this.props.projectName}
-          </CardTitle>
-          <CardText style={{ color: "white" }}>
-            {this.props.projectDescription}
-          </CardText>
-          <CardActions>
-            <Button
-              shadow={5}
-              colored
-              style={{ fontSize: "16pt", fontWeight: "bold" }}
+            <CardTitle
+              onClick={this.startCreateEventHandler}
+              style={{
+                cursor: "pointer",
+                color: "white",
+                height: "15em",
+                background: `url(${this.props.url}) center / contain `,
+
+                borderRadius: "10px",
+                justifyContent: "center",
+              }}
             >
-              <a href={this.props.githubLink}>GitHub</a>
-            </Button>
-            <Button colored>CodePen</Button>
-            <Button colored>
-              <a href={this.props.liveDemo}>Live Demo</a>
-            </Button>
-          </CardActions>
-          <CardMenu style={{ color: "#fff" }}>
-            <IconButton name="share" />
-          </CardMenu>{" "}
-          <App />
-        </Card>
-      </div>
+              {this.props.projectName}
+            </CardTitle>
+            <CardText
+              onClick={this.startCreateEventHandler}
+              style={{ color: "white", cursor: "pointer" }}
+            >
+              {this.props.projectSubtitle}
+            </CardText>
+            <CardActions>
+              <Button
+                shadow={5}
+                colored
+                style={{ fontSize: "16pt", fontWeight: "bold" }}
+              >
+                <a href={this.props.githubLink}>GitHub</a>
+              </Button>
+              <Button colored>
+                <a href={this.props.liveDemo}>Live Demo</a>
+              </Button>
+              <Button colored onClick={this.startCreateEventHandler}>
+                CodePen
+              </Button>
+            </CardActions>
+            <CardMenu style={{ color: "#fff" }}>
+              <IconButton name="share" />
+            </CardMenu>{" "}
+          </Card>
+        </div>
+      </React.Fragment>
     );
   }
 }

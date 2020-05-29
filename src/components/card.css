@@ -1,3 +1,7 @@
+.mdl-button {
+  position: inherit !important;
+}
+
 .mdl-card {
   z-index: auto !important;
 }
@@ -9,7 +13,7 @@ a:link {
   text-decoration: none;
 }
 .mdl-card__supporting-text {
-  height: 100px !important;
+  height: 110px !important;
 }
 
 * {
@@ -32,11 +36,11 @@ a:link {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 100;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .modal-box {
+  color: aliceblue;
   position: relative;
   top: 50%;
   left: 50%;
@@ -44,8 +48,7 @@ a:link {
   min-height: 30%;
   width: 60%;
   overflow-y: auto;
-  background-color: white;
+  background-color: #171b22;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  z-index: 101;
   padding: 40px;
 }
