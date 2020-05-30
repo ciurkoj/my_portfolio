@@ -16,7 +16,12 @@ class Resume extends Component {
               src={selfie}
               alt="avatar"
               id="resume_avatar"
-              style={{ height: "300px", borderRadius: "80px" }}
+              style={{
+                height: "400px",
+                borderRadius: "50px",
+                margin: "2em",
+                padding: "0px",
+              }}
             />
           </Cell>
           <Cell col={9} textAlign={"left"} style={{}}>
@@ -103,10 +108,10 @@ class Resume extends Component {
                 startYear={"09/2018"}
                 endYear={"present"}
                 schoolName="Coventry University"
-                schoolDegree="BSc (hons) Computer Science"
-                module0={"Software Engineering - Fronend Deveopment"}
-                module1={"Operating Systems and Security - C, C++, Assemby"}
-                module2={"Advanced Algorithms - Python, C++, R"}
+                schoolDegree="BSc (Hons) Computer Science"
+                module0={"Software Engineering: Frontend Development"}
+                module1={"Operating Systems and Security: C, C++, Assembly"}
+                module2={"Advanced Algorithms: Python, C++, R"}
               />
               <Education
                 startYear={"09/2014"}
@@ -114,13 +119,13 @@ class Resume extends Component {
                 schoolName="Technikum nr.2 Jarosław"
                 schoolDegree="Electronics Technician"
                 module0={
-                  "Automation Systems – PLC Siemens S7, Smart Home installations."
+                  "Automation Systems: PLC Siemens S7, Smart Home installations."
                 }
                 module1={
-                  "Electronic Devices' Serivice –Diagnostics, Design, Build, and Techniques of repair."
+                  "Electronic Devices' Serivice: Diagnostics, Design, Build, and Techniques of repair."
                 }
                 module2={
-                  "Network Devices Configuration- local network design and installation"
+                  "Network Devices Configuration: local network design and installation"
                 }
               />
             </Grid>
@@ -156,9 +161,12 @@ class Resume extends Component {
                 location="Bremen Area, Germany"
                 jobDescription="My team was responsible for installing the new fire protection system and then a
                 Wireless LAN network. Our duties included connecting patch panels, installing wireless
-                routers, and also connecting cash tills. Besides that, as a team leader I had to check my
-                colleagues' work, report our work to the manager and speak about what needs to be
-                done next. This developed my leadership and delegation skills."
+                routers, and connecting cash tills. As a team leader I had to check my colleagues' work,
+                report our work to the manager and speak about what needs to be done next. Thanks
+                to great communication and cooperation, we have been able to hit our target 1 day
+                earlier and that saved time we have spent on helping others who struggled with their
+                work. This developed my leadership and delegation skills, but also showed me what
+                well-tuned team can achieve."
               />
               <WorkExperience
                 startYear={"04/2019"}
@@ -166,8 +174,8 @@ class Resume extends Component {
                 jobName="Stock Controller"
                 employer="Staffing Match Ltd"
                 location="Magna Park, Lutterworth"
-                jobDescription="Checking the conformity of goods in the warehouse with the main database requiredme to work to deadline, which required strong time-management skills. I was
-                responsible for working on the scissor lift."
+                jobDescription="Checking goods' conformity in a warehouse with the main database, 
+                it required me to work with deadlines,it helped me to develop my time-management skills."
               />
               <WorkExperience
                 startYear={"05/2018"}
@@ -177,7 +185,20 @@ class Resume extends Component {
                 location="Siegen Area, Germany"
                 jobDescription="Electric installation redevelopment in Aldi store chain. I was responsible for installing
                 new devices such as checkout machines, alarm systems and I also mounted new light
-                fixtures."
+                fixtures. Back then I was just newcomer, who was lucky to work in amazing team which
+                taught me how important it is to always deliver the best available service and how to
+                pay attention even to the smallest details."
+              />
+              <WorkExperience
+                startYear={"05/2018"}
+                endYear={"09/2018"}
+                jobName="A local apiary,"
+                employer="Self-employed"
+                location="Hometown, Poland"
+                jobDescription="I ran with a success an apiary in my local town, I used to sell honey and as one of few I sold
+                pollen. Thanks to high quality products and customer service, I have built a business
+                that allowed me to earn a good money. The main lesson I have got from that time is:
+                Good and honest work are the best advertisement."
               />
             </Grid>
           </Grid>
