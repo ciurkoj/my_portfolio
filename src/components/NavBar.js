@@ -24,7 +24,7 @@ class NavBar extends Component {
               </Link>
             }
           >
-            <div class="blurry"></div>
+            <div className="blurry"></div>
             <Navigation>
               <Link to="/my_portfolio/resume">Resume</Link>
               <Link to="/my_portfolio/projects">Projects</Link>

@@ -24,7 +24,7 @@ class Resume extends Component {
               }}
             />
           </Cell>
-          <Cell col={9} textAlign={"left"} style={{}}>
+          <Cell col={9} style={{}}>
             <div col={12} style={{ display: "flex" }}>
               <Cell col={9}>
                 <h2 style={{ color: "white" }}>Jakub Ciurko</h2>
@@ -192,7 +192,7 @@ class Resume extends Component {
               <WorkExperience
                 startYear={"05/2018"}
                 endYear={"09/2018"}
-                jobName="A local apiary,"
+                jobName="A local apiary"
                 employer="Self-employed"
                 location="Hometown, Poland"
                 jobDescription="I ran with a success an apiary in my local town, I used to sell honey and as one of few I sold

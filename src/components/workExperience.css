@@ -1,0 +1,5 @@
+.show {
+  cursor: pointer;
+  display: block !important;
+  height: auto !important;
+}
