@@ -3,6 +3,19 @@ import { Grid, Cell } from "react-mdl";
 import "./workExperience.css";
 class WorkExperience extends Component {
   render() {
+    window.onload = function () {
+      var coll = document.getElementsByClassName("collapsible");
+      for (var i = 0; i < coll.length; i++)
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.lastElementChild;
+          if (content.style.height === "auto") {
+            content.style.height = "10px";
+          } else {
+            content.style.height = "auto";
+          }
+        });
+    };
     return (
       <Grid>
         <Cell
@@ -19,14 +32,11 @@ class WorkExperience extends Component {
             {this.props.startYear} - {this.props.endYear}
           </p>
         </Cell>
-        <Cell
-          col={8}
-          type="button"
-          className="collapsible"
-          style={{ height: "auto", overflow: "hidden", cursor: "pointer" }}
-        >
+        <Cell col={8} className="collapsible" style={{ overflow: "hidden" }}>
           <h4
+            type="button"
             style={{
+              cursor: "pointer",
               marginTop: "0px",
               marginBottom: "0",
               fontWeight: "bold",
@@ -57,22 +67,13 @@ class WorkExperience extends Component {
           <p style={{ padding: "0px", marginBottom: "0" }}>
             <b>Location: {this.props.location}</b>
           </p>
-          <p style={{ padding: "0px" }}>
+          <p style={{ padding: "0px", height: "10px" }}>
             Description: {this.props.jobDescription}
           </p>
         </Cell>
       </Grid>
     );
   }
-}
-
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function () {
-    console.log(this.classList);
-  });
 }
 
 export default WorkExperience;

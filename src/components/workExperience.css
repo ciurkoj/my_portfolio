@@ -1,5 +1,10 @@
 .show {
-  cursor: pointer;
   display: block !important;
   height: auto !important;
+}
+
+.collapsible:hover,
+.active {
+  background-color: #262e3a;
+  border-radius: 10px;
 }
