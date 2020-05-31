@@ -5,9 +5,14 @@ import { Link } from "react-router-dom";
 import "./NavBar.css";
 //import LandingPage from "./landingPage";
 import Router from "./router";
-
+import ReactGA from "react-ga";
+function initializeReactGA() {
+  ReactGA.initialize("UA-168054630-1");
+  ReactGA.pageview("/my_portfolio");
+}
 class NavBar extends Component {
   render() {
+    initializeReactGA();
     return (
       <div className="demo-big-content">
         <Layout>
