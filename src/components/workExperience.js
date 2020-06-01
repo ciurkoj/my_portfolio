@@ -1,21 +1,9 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import "./workExperience.css";
+
 class WorkExperience extends Component {
   render() {
-    window.onload = function () {
-      var coll = document.getElementsByClassName("collapsible");
-      for (var i = 0; i < coll.length; i++)
-        coll[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.lastElementChild;
-          if (content.style.height === "auto") {
-            content.style.height = "10px";
-          } else {
-            content.style.height = "auto";
-          }
-        });
-    };
     return (
       <Grid>
         <Cell

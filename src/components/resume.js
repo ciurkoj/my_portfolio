@@ -7,7 +7,23 @@ import selfie from "../pictures/selfie.png";
 import WorkExperience from "./workExperience";
 
 class Resume extends Component {
+  componentDidMount() {
+    var coll = document.getElementsByClassName("collapsible");
+    console.log(coll);
+    for (var i = 0; i < coll.length; i++)
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.lastElementChild;
+        if (content.style.height === "auto") {
+          content.style.height = "10px";
+        } else {
+          content.style.height = "auto";
+        }
+      });
+  }
+
   render() {
+    this.componentDidMount();
     return (
       <Grid>
         <Grid col={9} className="banner-text" style={{ display: "flex" }}>

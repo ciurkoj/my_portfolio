@@ -7,6 +7,19 @@ import "react-mdl/extra/material.css";
 import "react-mdl/extra/material.js";
 import { BrowserRouter } from "react-router-dom";
 
+var coll = document.getElementsByClassName("collapsible");
+console.log(coll);
+for (var i = 0; i < coll.length; i++)
+  coll[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var content = this.lastElementChild;
+    if (content.style.height === "auto") {
+      content.style.height = "10px";
+    } else {
+      content.style.height = "auto";
+    }
+  });
+
 ReactDOM.render(
   <BrowserRouter>
     <div>
