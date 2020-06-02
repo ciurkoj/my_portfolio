@@ -88,14 +88,24 @@ class ProjectCard extends Component {
                 colored
                 style={{ fontSize: "16pt", fontWeight: "bold" }}
               >
-                <a href={this.props.githubLink}>GitHub</a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={this.props.githubLink}
+                >
+                  GitHub
+                </a>
               </Button>
               <Button colored>
-                <a href={this.props.liveDemo}>Live Demo</a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={this.props.liveDemo}
+                >
+                  Live Demo
+                </a>
               </Button>
-              <Button colored onClick={this.startCreateEventHandler}>
-                CodePen
-              </Button>
+              <Button colored>CodePen</Button>
             </CardActions>
           </Card>
         </div>

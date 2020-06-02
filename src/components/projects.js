@@ -52,9 +52,16 @@ class Projects extends Component {
           />
           <ProjectCard
             projectName="Tic Tac Toe"
-            projectSubtitle="Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's"
+            projectSubtitle="In this project I practiced using React Hooks with this simple game such as Tic Tac Toe."
+            projectDescription="The game itself consist of 2 components: Board and Square. A Square is the simplest element, 
+            it renders a button with with a value passed in props. When button is clicked, it triggers a function passed also in props.
+            The function puts the next value (X or O) inside of the square. The Board collects squares and displays them in right order.
+            Game.js is responsible for game's logic, game needs only 3 methods: handleClick(), jumpTo() and renderMoves(). 
+            HandleClick handles whose turn is now and services game's history. JumpTo() switches between steps that have been made. 
+            RenderMoves() renders game's history, allowing user to go step back. "
             url={tictactoe}
+            githubLink="https://github.com/jciurko/tictactoe"
+            liveDemo="https://jciurko.github.io/tictactoe/"
           />
           <ProjectCard
             projectName="React Project #4"
