@@ -48,7 +48,7 @@ class Projects extends Component {
             The project taught me a lot about working in a team, especially how to assing tasks, how to deal with delays 
             and how help others if they face a problem. For example we have used GitHub Project Issues to manage tasks previously discussed on MS Teams or What'sApp."
             url="https://www.pngmart.com/files/7/Exchange-PNG-Transparent-Picture.png"
-            githubLink="https://github.coventry.ac.uk/5001CEM-1920SEPJAN/grantb3"
+            githubLink="https://github.com/jciurko/ExchangeBay"
           />
           <ProjectCard
             projectName="Tic Tac Toe"
