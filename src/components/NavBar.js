@@ -20,6 +20,7 @@ class NavBar extends Component {
         <Layout>
           <Header
             scroll
+            fixedHeader
             transparent
             className="header-color custom"
             title={

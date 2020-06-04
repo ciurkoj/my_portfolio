@@ -87,9 +87,14 @@ class Projects extends Component {
           }}
         >
           <ProjectCard
-            projectName="Automation"
-            projectDescription="Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's"
+            projectName="Web Automation with Django"
+            projectSubtitle="Project in progress, I'm using Python Django and heroku to deploy this app. This time I'll use Bootstrap to style my app. 
+            [Latest update: I've set up the environment and launch default Django app on Heroku]"
+            projectDescription="The idea is to mix Django with Selenium Web Driver to automate browser-based strategy game.
+            I just want to transfer resources from town to town and the max. capacity of single transport is too small, 
+            so as a player I need to log in a few times a day, which I find silly. There is better, free way to set a queue."
+            githubLink="https://github.com/jciurko/web_automation"
+            liveDemo="https://ciurkoj.herokuapp.com"
             url={automation}
           />
           <ProjectCard
