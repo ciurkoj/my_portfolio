@@ -88,10 +88,10 @@ class Projects extends Component {
         >
           <ProjectCard
             projectName="Web Automation with Django"
-            projectSubtitle="Project in progress, I'm using Python Django and heroku to deploy this app. This time I'll use Bootstrap to style my app. 
-            [Latest update: I've set up the environment and launch default Django app on Heroku]"
+            projectSubtitle="Project in progress, app build with Python Django, deployed on Google Cloud Platform, styled with BootStrap.
+            [Latest update: I've decided to move from heroku to GCP, GCP is more professional tool and fulfils all project's needs.]"
             projectDescription="The idea is to mix Django with Selenium Web Driver to automate browser-based strategy game.
-            I just want to transfer resources from town to town and the max. capacity of single transport is too small, 
+            I just want to transfer resources from town to town and the max capacity of single transport is too small, 
             so as a player I need to log in a few times a day, which I find silly. There is better, free way to set a queue."
             githubLink="https://github.com/jciurko/web_automation"
             liveDemo="https://bottyfy.nw.r.appspot.com"
