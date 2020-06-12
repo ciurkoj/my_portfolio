@@ -94,7 +94,7 @@ class Projects extends Component {
             I just want to transfer resources from town to town and the max. capacity of single transport is too small, 
             so as a player I need to log in a few times a day, which I find silly. There is better, free way to set a queue."
             githubLink="https://github.com/jciurko/web_automation"
-            liveDemo="https://ciurkoj.herokuapp.com"
+            liveDemo="https://bottyfy.nw.r.appspot.com"
             url={automation}
           />
           <ProjectCard
